@@ -54,3 +54,12 @@ def fizzbuzz(intList):
         elif intList[i] % 5==0:
             intList[i]='Buzz'
     return intList
+    
+#t-test
+counties = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+pre_values = [8, 7, 6, 9, 10, 5, 7, 11, 8, 7]
+post_values = [5, 6, 4, 6, 5, 3, 2, 9, 4, 4]
+
+
+from scipy.stats import ttest_rel
+print ttest_rel(post_values,pre_values)
